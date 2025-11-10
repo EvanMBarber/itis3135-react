@@ -1,18 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './Header'
+import { useEffect } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  useEffect(() => {
+    document.title = "Evan Barber's Enraged Baracuda | Course Homepage";
+  }, []);
 
   return (
-    <>
-      <Header></Header>
-      
-    </>
-  )
+    <section class='container'>
+      <h2>3135 Course Homepage</h2>
+      <p>Hello, this is the course home page for ITIS 3135.</p>
+    </section>
+  );
 }
-
-export default App

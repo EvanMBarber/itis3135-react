@@ -1,0 +1,132 @@
+body {
+  background: linear-gradient(to top, rgb(49, 50, 53) 2vh, rgb(13, 14, 15) 60vh);
+  min-height: 100vh;
+  font-family: Arial, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+/* Links */
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(115, 246, 255);
+}
+a:visited {
+  color: rgb(0, 100, 249);
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* About Me Section */
+.about-me {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.about-me ul {
+  list-style-type: disc;  
+  padding-left: 20px;     
+  margin: 0;
+  text-align: left;
+}
+
+.about-me ul ul {
+  list-style-type: circle; 
+  padding-left: 40px;     
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Portrait Image */
+.my-portrait {
+  width: 60vw;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  line-height: 50px;
+  margin-top: 40px;
+}
+
+/* Contract Section */
+.contract {
+  text-align: left;
+  display: inline-block;
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+/* Containers */
+.container {
+  width: 50%;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+td ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+/* Forms and Buttons */
+fieldset {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  min-width: 200px;
+  margin: 0 auto;
+}
+button {
+  margin: 6px auto;
+  padding: 5px 10px;
+}
+input, textarea {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.about-me, .contract {
+  max-width: 70vh;
+  display: inline-block;
+}
+
+/* Output Boxes (JSON/HTML Preview) */
+#json-output,
+#html-output {
+  white-space: pre-wrap;  /* wrap long lines */
+  word-wrap: break-word;
+  overflow: auto;
+  max-width: 100%;
+  max-height: 200px;
+  min-height: 100px;
+  font-family: monospace;
+  text-align: left;
+  padding: 5px;
+  box-sizing: border-box;
+}
