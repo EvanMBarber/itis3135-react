@@ -7,6 +7,7 @@ import Introduction from './Introduction';
 import Contract from './Contract';
 import Layout from './Layout';
 import './itis3135.css';
+import Introductions from './Introductions';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
           <Route index element={<App />} />
           <Route path="introduction" element={<Introduction />} />
           <Route path="contract" element={<Contract />} />
+          <Route path="Introductions" element={<Introductions />} />
         </Route>
       </Routes>
     </BrowserRouter>
